@@ -1,3 +1,4 @@
+CFLAGS=-Wno-error ./configure
 all: all-release
 
 cmake-debug:
