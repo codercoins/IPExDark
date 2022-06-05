@@ -20,6 +20,15 @@ namespace Crypto {
   }
 
   // MS VC 2012 doesn't interpret `class chacha8_iv` as POD in spite of [9.0.10], so it is a struct
+  #pragma pack(push, 1)
+  struct chacha8_key {
+    uint8_t data[CHACHA8_KEY_SIZE];
+
+    ~chacha8_key()
+    {
+      memset(data, 0, sizeof(data));
+    }
+  };
   struct chacha8_iv {
     uint8_t data[CHACHA8_IV_SIZE];
   };
