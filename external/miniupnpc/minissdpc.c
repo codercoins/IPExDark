@@ -103,7 +103,7 @@ getDevicesFromMiniSSDPD(const char * devtype, const char * socketpath)
 		if(p+2>=buffer+sizeof(buffer))
 			break;
 		DECODELENGTH(urlsize, p);
-		if(p+urlsize+2>=buffer+sizeof(buffer))
+		//if(p+urlsize+2>=buffer+sizeof(buffer))
 			break;
 		url = p;
 		p += urlsize;
