@@ -9,7 +9,10 @@
 
 namespace CryptoNote {
 namespace parameters {
-
+const std::initializer_list<const char*> SEED_NODES = {
+  "192.168.0.1:17236",
+  "192.168.0.2:17236",
+};
 const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
@@ -39,8 +42,8 @@ const uint64_t MINIMUM_FEE                                   = 1;
 const uint64_t DEFAULT_DUST_THRESHOLD                        = MINIMUM_FEE;
 
 //TODO Define preferred block's target time
-const uint64_t DIFFICULTY_TARGET                             = 600; // seconds
-const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 13 * 120 * 120 / DIFFICULTY_TARGET;
+const uint64_t DIFFICULTY_TARGET                             = 120; // seconds
+const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 24 * 60 * 60 / DIFFICULTY_TARGET;
 //TODO There are options to tune CryptoNote's difficulty retargeting function.
 //TODO We recommend not to change it.
 const size_t   DIFFICULTY_WINDOW                             = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY; // blocks
@@ -103,12 +106,12 @@ const uint32_t P2P_DEFAULT_PING_CONNECTION_TIMEOUT           = 2000;          //
 const uint64_t P2P_DEFAULT_INVOKE_TIMEOUT                    = 60 * 2 * 1000; // 2 minutes
 const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          // 5 seconds
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1510d13336228debfee9c918ce505efe225d8c94d045fa115";
-const uint64_t MINIMUM_FEE = 1;
+const uint64_t MINIMUM_FEE = 100000;
 const size_t CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE = 20000;
 //TODO Add here your network seed nodes
 const std::initializer_list<const char*> SEED_NODES = {
-   "159.203.1.104:17236",
-  "159.203.1.104:17236",
+   "111.11.11.11:17236",
+  "222.22.22.22:17236",
 };
 
 struct CheckpointData {
