@@ -10,8 +10,8 @@
 namespace CryptoNote {
 namespace parameters {
 const std::initializer_list<const char*> SEED_NODES = {
-  "192.168.0.1:17236",
-  "192.168.0.2:17236",
+  "159.203.1.104:17236",
+  "159.203.1.104:17236",
 };
 const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
