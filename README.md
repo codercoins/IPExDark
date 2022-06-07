@@ -21,6 +21,7 @@ IPExDark is an anonymous based Blockchain based on of the Monero and CryptoNote 
 -  cd <YOUR_DIRECTORY_YOU_INSTALLED_https://github.com/codercoins/IPExDark.git_TO>  && cd src && sudo ./simplewallet
 ~Press G to generate a new wallet with wallet name and psswd.
 -type: help (for wallet options including but not limited to mining)
+-**If its is not syncing on your end try typing ./IPExDarkd --print-genisis-tx  and then run the daemon again.**
 
 <ipex.nftify.network>
 <ninkyogirl.nft>
