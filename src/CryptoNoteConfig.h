@@ -78,7 +78,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "IPExDark";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff0001ffffffffff1f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121013667f62797cdad87846bb651990b7636c60e517486edf8168b8c0b407930b7fc";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff0001ffffffffff1f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101cf28b86fcd08687934dc610ebacf5c3b357e98cca58ac488f3eeb10803c7301b";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
